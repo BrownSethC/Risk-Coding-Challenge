@@ -99,5 +99,20 @@ namespace Risk.Signalr.ConsoleClient
             };
             return board.Where(t => neighborLocations.Contains(t.Location));
         }
+        protected IEnumerable<BoardTerritory> GetLocation(BoardTerritory territory, IEnumerable<BoardTerritory> board)
+        {
+            var l = territory.Location;
+            var neighborLocations = new[] {
+                new Location(l.Row+1, l.Column-1),
+                new Location(l.Row+1, l.Column),
+                new Location(l.Row+1, l.Column+1),
+                new Location(l.Row, l.Column-1),
+                new Location(l.Row, l.Column+1),
+                new Location(l.Row-1, l.Column-1),
+                new Location(l.Row-1, l.Column),
+                new Location(l.Row-1, l.Column+1),
+            };
+            return board.Where(t => neighborLocations.Contains(t.Location));
+        }
     }
 }

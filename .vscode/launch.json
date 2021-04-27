@@ -10,9 +10,12 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Risk.Server/bin/Debug/net5.0/Risk.Server.dll",
+            // "program": "${workspaceFolder}/Risk.Server/bin/Debug/net5.0/Risk.Server.dll",
+            // "args": [],
+            // "cwd": "${workspaceFolder}/Risk.Server",
+            "program": "${workspaceFolder}/Risk.Signalr.ConsoleClient/bin/Debug/net5.0/Risk.Signalr.ConsoleClient.exe",
             "args": [],
-            "cwd": "${workspaceFolder}/Risk.Server",
+            "cwd": "${workspaceFolder}/Risk.Signalr.ConsoleClient",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
